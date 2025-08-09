@@ -149,13 +149,27 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
-              Container(
-                child: CustomIconSplashAnimation(
-                  iconPath: Assets.iconApp,
-                  size: 250.0,
+              CustomIconSplashAnimation(
+                iconPath: Assets.iconApp,
+                size: 250.0,
+              ),
+              const SizedBox(height: 24),
+              Text(
+                AppLocalizations.text(LangKey.app_name),
+                style: const TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87,
                 ),
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 8),
+              const Text(
+                'Your AI companion',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black54,
+                ),
+              ),
               const Spacer(),
               CustomLoadingIndicator(
                 effectType: LoadingEffectType.bouncingDots,

@@ -127,11 +127,22 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> with 
 
   void _continueToOnboarding() async {
     await Globals.prefs.setBool(SharedPrefsKey.language_selected, true);
-    
+
     CustomNavigator.pushReplacement(
       context,
       OnboardingScreen(),
       animationType: AnimationType.slide,
+    );
+  }
+
+  Widget _buildDecorCircle(Color color) {
+    return Container(
+      width: 160,
+      height: 160,
+      decoration: BoxDecoration(
+        color: color,
+        shape: BoxShape.circle,
+      ),
     );
   }
 
@@ -259,23 +270,36 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> with 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.mint.withValues(alpha: 0.3),
-              AppColors.lavender.withValues(alpha: 0.2),
-              Colors.white,
-            ],
+      body: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  AppColors.coral.withValues(alpha: 0.2),
+                  AppColors.sunnyYellow.withValues(alpha: 0.2),
+                  AppColors.mint.withValues(alpha: 0.2),
+                ],
+              ),
+            ),
           ),
-        ),
-        child: SafeArea(
-          child: FadeTransition(
-            opacity: _fadeAnimation,
-            child: Column(
-              children: [
+          Positioned(
+            top: -60,
+            left: -60,
+            child: _buildDecorCircle(AppColors.coral.withValues(alpha: 0.3)),
+          ),
+          Positioned(
+            bottom: -80,
+            right: -80,
+            child: _buildDecorCircle(AppColors.mint.withValues(alpha: 0.3)),
+          ),
+          SafeArea(
+            child: FadeTransition(
+              opacity: _fadeAnimation,
+              child: Column(
+                children: [
                 const SizedBox(height: 40),
                 // Header
                 Padding(
