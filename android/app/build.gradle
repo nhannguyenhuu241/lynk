@@ -1,0 +1,100 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = project.hasProperty('applicationId') ? project.applicationId : "com.life.lynkan.lynk_an"
+    compileSdk = 35
+    ndkVersion = "26.1.10909125"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    defaultConfig {
+        applicationId = project.hasProperty('applicationId') ? project.applicationId : 'com.life.lynkan.lynk_an'
+        minSdk = 23
+        targetSdk = 34
+        versionCode = project.hasProperty('versionCode') ? project.versionCode.toInteger() : flutter.versionCode
+        versionName = project.hasProperty('versionName') ? project.versionName : flutter.versionName
+        manifestPlaceholders += [
+                'appAuthRedirectScheme': project.hasProperty('authRedirectScheme') ? project.authRedirectScheme : 'com.life.lynkan.lynk_an-sigin-callback',
+                'appName': project.hasProperty('appName') ? project.appName : 'Lynk Ấn',
+                'appId': project.hasProperty('applicationId') ? project.applicationId : 'com.life.lynkan.lynk_an'
+        ]
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../../${project.hasProperty('storeFile') ? project.storeFile : 'lynkan-release-key.jks'}")
+            storePassword project.hasProperty('storePassword') ? project.storePassword : "lynkan123"
+            keyAlias project.hasProperty('keyAlias') ? project.keyAlias : "lynkan"
+            keyPassword project.hasProperty('keyPassword') ? project.keyPassword : "lynkan123"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig = signingConfigs.release
+            debuggable false
+            lintOptions {
+                disable 'MissingTranslation'
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/kotlin']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+
+    dataBinding { enabled = true }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.16.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx:22.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:19.0.0'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.android.support:support-annotations:28.0.0'
+}
+
+// Fix for Google Services task dependency
+afterEvaluate {
+    tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Resources") }.configureEach {
+        dependsOn(tasks.matching { it.name.startsWith("process") && it.name.endsWith("GoogleServices") })
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- English app name -->
+    <string name="app_name">Lynk An</string>
+    
+    <!-- English description -->
+    <string name="app_description">AI-powered mysticism and career consulting app</string>
+</resources>

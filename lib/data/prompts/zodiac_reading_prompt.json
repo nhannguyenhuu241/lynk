@@ -1,0 +1,231 @@
+{
+  "template": {
+    "main_topic": "TỬ VI CUNG [PALACE_NAME] THÁNG [MM/YYYY]",
+    "brand": "Lynk Ấn",
+    "structure": {
+      "ID1": {
+        "title": "[ICON] TỬ VI [PALACE_NAME] THÁNG [MM/YYYY] – Lynk Ấn",
+        "greeting": "[FRIENDLY_GREETING] [ICON]",
+        "hook": "[CAPTIVATING_SUMMARY_ABOUT_PALACE_PROSPECTS]"
+      },
+      "ID2": {
+        "section_title": "[ICON] 1. Tổng Quan [PALACE_NAME] Tháng Này",
+        "content": {
+          "phase_1": "[FIRST_HALF_DESCRIPTION]",
+          "phase_2": "[SECOND_HALF_DESCRIPTION]"
+        }
+      },
+      "ID3": {
+        "section_title": "[ICON] 2. Highlight Đặc Biệt [PALACE_NAME]",
+        "content": {
+          "highlight_1": "[INTERACTION_OPPORTUNITY]",
+          "highlight_2": "[PERSONAL_ACTION_SUGGESTION]",
+          "lucky_elements": {
+            "colors": "[COLOR_A] hoặc [COLOR_B]",
+            "numbers": "[LUCKY_NUMBER]"
+          }
+        }
+      },
+      "ID4": {
+        "section_title": "[ICON] 3. Lịch Ngày Vàng Cho [PALACE_NAME]",
+        "content": {
+          "golden_days": [
+            {
+              "date": "[DD/MM/YYYY]",
+              "action": "[SPECIFIC_ACTION_SUGGESTION]",
+              "prosperity_level": "[STARS_RATING]"
+            },
+            {
+              "date": "[DD/MM/YYYY]",
+              "action": "[SPECIFIC_ACTION_SUGGESTION]",
+              "prosperity_level": "[STARS_RATING]"
+            }
+          ]
+        }
+      },
+      "ID5": {
+        "section_title": "[ICON] 4. Cảnh Báo & Tip Vượt \"Thử Thách\"",
+        "content": {
+          "warning_1": "[FIRST_RISK_OR_CAUTION]",
+          "warning_2": "[SECOND_RISK_OR_CAUTION]",
+          "tip": "[HELPFUL_HABIT_OR_ACTION]"
+        }
+      },
+      "ID6": {
+        "section_title": "[ICON] 5. Gợi Ý Nâng Cao Vận Khí",
+        "content": {
+          "space_tip": "[SPACE_ARRANGEMENT_SUGGESTION]",
+          "personal_tip": "[PERSONAL_ITEM_OR_HABIT_SUGGESTION]",
+          "challenge_tip": "[MONTHLY_POSITIVE_CHALLENGE]"
+        }
+      },
+      "ID7": {
+        "mini_bonus": "\"[INSPIRATIONAL_QUOTE_OR_SLOGAN]\" [ICON]",
+        "closing_wish": "[ENERGETIC_CLOSING_WISH]"
+      }
+    }
+  },
+  "palaces": {
+    "menh": {
+      "name": "Mệnh",
+      "description": "Cung chủ đạo quyết định tính cách và vận mệnh",
+      "icon": "🌟",
+      "color_theme": "#FF6B6B"
+    },
+    "phuhuuynh": {
+      "name": "Phụ Huynh", 
+      "description": "Cung thể hiện mối quan hệ với gia đình",
+      "icon": "👨‍👩‍👧‍👦",
+      "color_theme": "#4ECDC4"
+    },
+    "phucdue": {
+      "name": "Phúc Đức",
+      "description": "Cung của may mắn và phúc khí",
+      "icon": "🍀",
+      "color_theme": "#FFE66D"
+    },
+    "dientrach": {
+      "name": "Điền Trạch",
+      "description": "Cung tài sản và sự ổn định",
+      "icon": "🏠",
+      "color_theme": "#B39CD0"
+    },
+    "quan_loc": {
+      "name": "Quan Lộc",
+      "description": "Cung sự nghiệp và địa vị",
+      "icon": "👑",
+      "color_theme": "#FF9F43"
+    },
+    "noboc": {
+      "name": "Nô Bộc",
+      "description": "Cung bạn bè và đồng nghiệp",
+      "icon": "🤝",
+      "color_theme": "#6BCF7F"
+    },
+    "thienkhoi": {
+      "name": "Thiên Khôi",
+      "description": "Cung di chuyển và thay đổi",
+      "icon": "🌏",
+      "color_theme": "#FF6B9D"
+    },
+    "tatach": {
+      "name": "Tật Ách",
+      "description": "Cung sức khỏe và phục hồi",
+      "icon": "💪",
+      "color_theme": "#8B5A2B"
+    },
+    "taibach": {
+      "name": "Tài Bạch",
+      "description": "Cung tài lộc và giàu có",
+      "icon": "💎",
+      "color_theme": "#9B59B6"
+    },
+    "tutuc": {
+      "name": "Tử Tức",
+      "description": "Cung con cái và thế hệ trẻ",
+      "icon": "👶",
+      "color_theme": "#34495E"
+    },
+    "phuthe": {
+      "name": "Phu Thê",
+      "description": "Cung tình duyên và hôn nhân",
+      "icon": "💕",
+      "color_theme": "#00CED1"
+    },
+    "huynhde": {
+      "name": "Huynh Đệ",
+      "description": "Cung anh chị em và bạn bè",
+      "icon": "👥",
+      "color_theme": "#87CEEB"
+    }
+  },
+  "sample_prompts": {
+    "menh": {
+      "ID1": {
+        "title": "🌟 TỬ VI CUNG MỆNH THÁNG 01/2025 – Lynk Ấn",
+        "greeting": "Hello bạn ơi! ✨",
+        "hook": "Tháng này cung Mệnh của bạn có nhiều tín hiệu khởi sắc, vibe như \"sẵn sàng đón nhận những điều tốt đẹp nhất\" - năng lượng tích cực đang dồn dập về phía bạn!"
+      },
+      "ID2": {
+        "section_title": "🌟 1. Tổng Quan Cung Mệnh Tháng Này",
+        "content": {
+          "phase_1": "Nửa đầu tháng: Bạn sẽ cảm nhận được nguồn năng lượng mới mẻ, tư duy sáng tạo và khả năng quyết đoán tăng cao. Đây là thời điểm tốt để bắt đầu những dự án mới hoặc thay đổi tích cực trong cuộc sống.",
+          "phase_2": "Nửa cuối tháng: Hãy cân bằng giữa nhiệt huyết và sự thận trọng. Tránh đưa ra quyết định quá vội vàng, thay vào đó hãy lắng nghe tiếng lòng và cân nhắc kỹ lưỡng."
+        }
+      },
+      "ID3": {
+        "section_title": "✨ 2. Highlight Đặc Biệt Cung Mệnh",
+        "content": {
+          "highlight_1": "Gặp gỡ quý nhân: Bạn có thể gặp gỡ người mang lại cơ hội mới, đặc biệt là những người lớn tuổi hoặc có kinh nghiệm trong lĩnh vực bạn quan tâm.",
+          "highlight_2": "Nếu có ý định thay đổi phong cách sống hoặc học một kỹ năng mới, đây là thời điểm vàng để bắt đầu. Sự quyết tâm của bạn sẽ được đền đáp xứng đáng.",
+          "lucky_elements": {
+            "colors": "Đỏ cam hoặc Vàng gold",
+            "numbers": "7"
+          }
+        }
+      },
+      "ID4": {
+        "section_title": "🗓️ 3. Lịch Ngày Vàng Cho Cung Mệnh",
+        "content": {
+          "golden_days": [
+            {
+              "date": "08/01/2025",
+              "action": "Bắt đầu một thói quen tích cực mới hoặc đăng ký khóa học bạn đã muốn học từ lâu",
+              "prosperity_level": "✨✨✨"
+            },
+            {
+              "date": "15/01/2025", 
+              "action": "Gặp gỡ bạn bè cũ hoặc tham gia sự kiện networking để mở rộng mối quan hệ",
+              "prosperity_level": "✨✨"
+            }
+          ]
+        }
+      },
+      "ID5": {
+        "section_title": "⚠️ 4. Cảnh Báo & Tip Vượt \"Thử Thách\"",
+        "content": {
+          "warning_1": "Tránh đưa ra quyết định quan trọng về tài chính khi cảm thấy quá phấn khích hoặc căng thẳng",
+          "warning_2": "Cẩn trọng trong giao tiếp với đồng nghiệp, tránh thể hiện thái độ quá cứng rắn hoặc áp đặt",
+          "tip": "Hãy dành 10 phút mỗi sáng để thiền định hoặc viết nhật ký, điều này sẽ giúp bạn giữ được sự tỉnh táo và cân bằng cảm xúc."
+        }
+      },
+      "ID6": {
+        "section_title": "🔮 5. Gợi Ý Nâng Cao Vận Khí",
+        "content": {
+          "space_tip": "Đặt một chậu cây xanh nhỏ hoặc tinh thể thạch anh trắng ở góc đông nam của phòng ngủ để tăng cường năng lượng tích cực",
+          "personal_tip": "Mang theo một vật phẩm màu đỏ cam (có thể là khăn tay, dây đeo tay) để kích hoạt năng lượng cá nhân",
+          "challenge_tip": "Thử thách bản thân đọc một cuốn sách mới mỗi tuần trong tháng này - điều này sẽ mở mang tầm nhìn và tăng cường trí tuệ"
+        }
+      },
+      "ID7": {
+        "mini_bonus": "\"Mệnh của bạn chính là những gì bạn tạo ra mỗi ngày!\" 🌟",
+        "closing_wish": "Chúc bạn một tháng 1 tràn đầy năng lượng, mọi ước mơ đều thành hiện thực! ✨🎉"
+      }
+    }
+  },
+  "placeholders": {
+    "[PALACE_NAME]": "Tên cung mệnh (VD: Mệnh, Phúc Đức, etc.)",
+    "[MM/YYYY]": "Tháng và năm hiện tại",
+    "[ICON]": "Icon phù hợp với cung mệnh",
+    "[FRIENDLY_GREETING]": "Lời chào thân mật", 
+    "[CAPTIVATING_SUMMARY_ABOUT_PALACE_PROSPECTS]": "Câu tóm tắt hấp dẫn về viễn cảnh",
+    "[FIRST_HALF_DESCRIPTION]": "Mô tả nửa đầu tháng",
+    "[SECOND_HALF_DESCRIPTION]": "Mô tả nửa cuối tháng",
+    "[INTERACTION_OPPORTUNITY]": "Cơ hội tương tác với người khác",
+    "[PERSONAL_ACTION_SUGGESTION]": "Gợi ý hành động cá nhân",
+    "[COLOR_A]": "Màu may mắn thứ nhất",
+    "[COLOR_B]": "Màu may mắn thứ hai",
+    "[LUCKY_NUMBER]": "Con số may mắn",
+    "[DD/MM/YYYY]": "Ngày tháng năm cụ thể",
+    "[SPECIFIC_ACTION_SUGGESTION]": "Gợi ý hành động cụ thể",
+    "[STARS_RATING]": "Đánh giá bằng sao (VD: ✨✨✨)",
+    "[FIRST_RISK_OR_CAUTION]": "Rủi ro hoặc cảnh báo đầu tiên",
+    "[SECOND_RISK_OR_CAUTION]": "Rủi ro hoặc cảnh báo thứ hai",
+    "[HELPFUL_HABIT_OR_ACTION]": "Thói quen hoặc hành động hữu ích",
+    "[SPACE_ARRANGEMENT_SUGGESTION]": "Gợi ý bài trí không gian",
+    "[PERSONAL_ITEM_OR_HABIT_SUGGESTION]": "Gợi ý vật phẩm cá nhân hoặc thói quen",
+    "[MONTHLY_POSITIVE_CHALLENGE]": "Thử thách tích cực trong tháng",
+    "[INSPIRATIONAL_QUOTE_OR_SLOGAN]": "Câu trích dẫn hoặc slogan truyền cảm hứng",
+    "[ENERGETIC_CLOSING_WISH]": "Lời chúc kết thúc tràn đầy năng lượng"
+  }
+}

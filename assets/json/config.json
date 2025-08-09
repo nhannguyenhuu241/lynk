@@ -1,0 +1,33 @@
+{
+  "environment": "staging",
+  "staging": {
+    "appName": "Lynk Ấn",
+    "appId": "com.life.lynkan.lynk_an",
+    "versionName": "1.0.0",
+    "versionCode": 1,
+    "server": "",
+    "langDefault": "vi",
+    "enableLang": true,
+    "releaseDate": "30/06/2025",
+    "storeFile": "lynkan-release-key.jks",
+    "storePassword": "lynkan123",
+    "keyAlias": "lynkan",
+    "keyPassword": "lynkan123",
+    "displayPrint": true
+  },
+  "production": {
+    "appName": "Lynk Ấn",
+    "appId": "com.life.lynkan.lynk_an",
+    "versionName": "1.0.0",
+    "versionCode": 1,
+    "server": "",
+    "langDefault": "vi",
+    "enableLang": true,
+    "releaseDate": "30/06/2025",
+    "storeFile": "lynkan-release-key.jks",
+    "storePassword": "lynkan123",
+    "keyAlias": "lynkan",
+    "keyPassword": "lynkan123",
+    "displayPrint": true
+  }
+}

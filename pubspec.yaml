@@ -1,0 +1,108 @@
+name: lynk_an
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  connectivity_plus: ^6.1.4
+  shared_preferences: ^2.5.3
+  rxdart: ^0.28.0
+  cached_network_image: ^3.4.1
+  keyboard_actions: ^4.2.0
+  dio: ^5.8.0+1
+  permission_handler: ^12.0.0+1
+  url_launcher: ^6.3.1
+  flutter_datetime_picker_plus: ^2.2.0
+  fluttertoast: ^8.2.12
+  intl: ^0.20.2
+  firebase_analytics: ^11.3.0
+  firebase_core: ^3.4.0
+  cloud_firestore: ^5.4.0
+  overlay_support: ^2.1.0
+  flame: ^1.17.0
+  auto_size_text_plus: 3.0.1
+  vector_math: ^2.1.4
+  image_picker: ^1.1.2
+  file_picker: ^10.2.0
+  device_info_plus: ^11.3.0
+  path_provider: ^2.1.2
+  share_plus: ^10.1.3
+  socket_io_client: ^2.0.3+1
+  web_socket_channel: ^2.4.0
+  lottie: ^3.3.1
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  sprintf: ^7.0.0
+  flutter_markdown: ^0.7.4
+  flutter_secure_storage: ^9.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/json/
+    - assets/json/ai_prompts/
+    - assets/fonts/
+    - assets/lottie/
+    - lib/data/prompts/
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Baloo 2
+      fonts:
+        - asset: assets/fonts/Baloo2-VariableFont_wght.ttf
+    - family: Noto Sans KR
+      fonts:
+        - asset: assets/fonts/NotoSansKR-VariableFont_wght.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSansKR-VariableFont_wght.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansKR-VariableFont_wght.ttf
+          weight: 700
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package

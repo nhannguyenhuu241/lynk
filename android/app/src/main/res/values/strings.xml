@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name that can be localized -->
+    <string name="app_name">Lynk Ấn</string>
+    
+    <!-- Default values that can be overridden -->
+    <string name="app_description">AI-powered mysticism and career consulting app</string>
+</resources>

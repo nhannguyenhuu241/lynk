@@ -1,0 +1,40 @@
+import groovy.json.JsonSlurper
+
+project.ext{
+    config = getConfigJson()
+    versionName = config["versionName"]
+    versionCode = config["versionCode"]
+    appName = config["appName"]
+    applicationId = config["appId"]
+    storeFile = config["storeFile"]
+    storePassword = config["storePassword"]
+    keyAlias = config["keyAlias"]
+    keyPassword = config["keyPassword"]
+}
+
+def getConfigJson(){
+    String path = projectDir.getAbsolutePath() + "/assets/json/config.json"
+    path = path.replaceAll('android/','')
+    def inputFile = new File(path)
+    def jsonFile = new JsonSlurper().parse(inputFile)
+    return jsonFile[jsonFile["environment"]]
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

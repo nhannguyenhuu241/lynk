@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "677446347525",
+    "project_id": "lynkan-d03bc",
+    "storage_bucket": "lynkan-d03bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677446347525:android:19a5d2007a656b75de656c",
+        "android_client_info": {
+          "package_name": "com.life.lynkan.lynk_an"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3JEGNVxvKFZVaW_Bm53jRxNJPTZrf7S4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

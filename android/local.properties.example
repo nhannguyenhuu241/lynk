@@ -1,0 +1,23 @@
+# This file should be copied to local.properties and contains sensitive configuration
+# local.properties should NOT be committed to version control
+
+# Flutter SDK path
+flutter.sdk=/path/to/flutter
+
+# App Configuration (override defaults in gradle.properties)
+applicationId=com.life.lynkan.lynk_an
+appName=Lynk Ấn
+versionName=1.0.0
+versionCode=1
+
+# Signing Configuration (SENSITIVE - do not commit)
+storeFile=lynkan-release-key.jks
+storePassword=your_store_password_here
+keyAlias=your_key_alias_here
+keyPassword=your_key_password_here
+
+# OAuth Configuration
+authRedirectScheme=com.life.lynkan.lynk_an-sigin-callback
+
+# API Keys (SENSITIVE - do not commit)
+# gemini.api.key=your_gemini_api_key_here
